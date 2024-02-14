@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Red: "#EA5353",
+              Cyan: "#45D3D3",
+              Orange: "#FCAF4A",
+              Blue: "#549EF2",
+              DarkBlue: "#4C4E61",
+              Gray: "#A3A5AE",
+              LightGrey: "#FAFAFA",
+            },
+            fontFamily: {
+              Poppins: " 'Poppins', sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="w-full h-screen bg-LightGray font-Poppins flex items-center flex-col px-6"
+  >
+    <header class="w-full text-center my-14">
+      <h1 class="text-[1.6rem] text-Gray">Reliable, efficient delivery</h1>
+      <h2 class="text-DarkBlue text-[1.6rem] font-extrabold">
+        Powered by Technology
+      </h2>
+      <p class="text-Gray text-base mt-3">
+        Our Artificial Intelligence powered tools use millions of project data <br>
+        points to ensure that your project is successful
+      </p>
+    </header>
+                                    <!-- box part -->
+    <main class="w-full md:flex md:justify-center md:items-center  md:px-[12rem]">
+      <section class="md:w-1/2 bg-LightGray border-t-4 border-t-Cyan shadow-2xl p-5 rounded-md md:mr-5 " >
+        <h3 class="font-bold text-DarkBlue text-lg">Supervisor</h3>
+        <p class="text-Gray text-[1rem] mt-3">
+          Monitors activity to identify project roadblocks
+        </p>
+        <span class="flex justify-end mt-5">
+          <img
+            class=""
+            src="./images/icon-supervisor.svg"
+            alt="icon-supervisor"
+          />
+        </span>
+      </section>
+
+                                    <!-- 1st box end -->
+                                    <!-- 2nd and 3rd start -->
+      <section class="md:w-1/2 md:mr-5 mt-5">
+        <section
+        class="w-full bg-LightGray border-t-4 border-t-Red shadow-2xl p-5 mb-7 rounded-md"
+      >
+        <h3 class="font-bold text-DarkBlue">Team Builder</h3>
+        <p class="text-Gray">
+          Scans our talent network to create the optimal team for your project
+        </p>
+        <span class="flex justify-end mt-5">
+          <img
+            class=""
+            src="./images/icon-team-builder.svg"
+            alt="icon-team-builder"
+          />
+        </span>
+      </section>
+      <section
+        class=" bg-LightGray border-t-4 border-t-Orange shadow-2xl p-5 mb-5 rounded-md"
+      >
+        <h3 class="font-bold text-DarkBlue">Karma</h3>
+        <p class="text-Gray">
+          Regularly evaluates our talent to ensure quality
+        </p>
+        <span class="flex justify-end mt-5">
+          <img
+            class=""
+            src="./images/icon-karma.svg"
+            alt="icon-karma"
+          />
+        </span>
+      </section>
+      </section>
+      <section
+        class="md:w-1/2 bg-LightGray border-t-4 border-t-Blue shadow-2xl p-5 rounded-md"
+      >
+        <h3 class="font-bold text-DarkBlue">Calculator</h3>
+        <p class="text-Gray">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+        <span class="flex justify-end mt-5">
+          <img
+            class=""
+            src="./images/icon-calculator.svg"
+            alt="icon-calculator"
+          />
+        </span>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
